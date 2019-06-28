@@ -1,12 +1,12 @@
-// (example) Write a function that accepts two number arguments and adds them
-// together.
+ (example) Write a function that accepts two number arguments and adds them
+ together.
 var add = function (num1,num2) {
 
   return num1 + num2;
 };
 
-// Create a function that takes in a cost and a quantity and outputs the total
-// pre-tax cost for that quantity of items at the given price. For example
+ Create a function that takes in a cost and a quantity and outputs the total
+ pre-tax cost for that quantity of items at the given price. For example
 
      var preTaxTotal = totalCost(5, 5.99);  5 items at 5.99
      = 29.950000000000003
@@ -18,8 +18,8 @@ var totalCost = function (quantity, cost) {
 
 
 
-// Write a function that takes a rank and a suit as input, and returns a string
-// representation of a card. For example, it should behave as follows
+ Write a function that takes a rank and a suit as input, and returns a string
+ representation of a card. For example, it should behave as follows
 
      cardString(ace, spades);
      = ace of spades
@@ -30,8 +30,8 @@ var cardString = function (rank, suit) {
   return rank+ of +suit;
 };
 
-// Write a function called `openTag` that accepts a tag name and returns an
-//opening HTML tag with that tag name. For example,
+ Write a function called `openTag` that accepts a tag name and returns an
+ opening HTML tag with that tag name. For example,
 
      openTag(p);
      = p
@@ -43,8 +43,8 @@ var openTag = function (tagname) {
   return +tagname+;
 };
 
- //Similarly, write a function called `closingTag` that returns the closing HTML tag
- //with that name.
+ Similarly, write a function called `closingTag` that returns the closing HTML tag
+ with that name.
 
      closeTag(p);
      = p
@@ -61,15 +61,15 @@ var closeTag = function (tagname) {
  //and the string content, and returns the content tagged with the specified
  //string.  For example
 
-li, list item 1);
-     = lilist item 1li
+//li, list item 1);
+ // = lilist item 1li
 
       the 'em' tag is for 'emphasis'
      toTagString(em, this is important stuff);
      = emthis is important stuffem
 
  //Although I won't be testing for this, your code should re-use the functions that
- //you created in the previous section.
+// you created in the previous section.
 var toTagString = function (tagname,content) {
 
   return (openTag(tagname)+content+closeTag(tagname))
